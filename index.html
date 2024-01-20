@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
+  <body>
+    <style>
+      .glowing-circle {
+        width: 100%;
+        height: 12vh;
+        background-image: url("neon.jpeg");
+        animation: glowing 1s ease-in-out infinite alternate;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      @keyframes glowing {
+        from {
+          box-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 40px rgb(105, 104, 2),
+            0 0 40px #0ff, 0 0 50px #034923, 0 0 60px #26e600, 0 0 70px #094e09;
+        }
+        to {
+          box-shadow: 0 0 15px #fff, 0 0 30px #90ff36, 0 0 40px #027e02,
+            0 0 50px #108610, 0 0 60px #6d8fec, 0 0 70px #067d8d,
+            0 0 80px #dd4c4c;
+        }
+      }
+
+      .glowing-icon {
+        text-shadow: 0 0 8px #fff8f8;
+      }
+      .fa-sharp:hover {
+        cursor: pointer;
+        transform: translateY(-12px);
+        transition: all 1s ease;
+      }
+      .icon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon-name {
+        display: none;
+      }
+
+      .icon-container:hover .icon-name {
+        display: block;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: 700;
+        text-shadow: 0 0 5px #ffffff;
+        cursor: pointer;
+      }
+      .total {
+        background-image: url("2641054.gif");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+      }
+      .box {
+        align-items: center;
+        margin-top: 8%;
+        margin-left: 25%;
+        height: 60vh;
+        width: 50vw;
+        box-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 40px rgb(105, 104, 2),
+          0 0 40px #0ff, 0 0 50px #034923, 0 0 60px #26e600, 0 0 70px #094e09;
+      }
+      h1 {
+        text-shadow: 0 0 8px #000000;
+        margin-left: 43%;
+        margin-right: 45%;
+        color: rgb(250, 250, 250);
+      }
+      .input {
+        margin-left: 25%;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .input input {
+        border: none;
+        border-bottom: 2px solid rgb(255, 255, 255); /* Add a white border-bottom */
+        background-color: transparent; /* Make the background transparent */
+        color: white;
+        outline: none;
+        padding-left: 5px;
+        font-size: 16px;
+      }
+      h2 {
+        margin-bottom: 0px;
+        color: white;
+        margin-top: 25px;
+        text-decoration: #000000;
+      }
+
+      .input input:hover {
+        transform: translateY(5px);
+        transition: all 0.7s ease;
+      }
+      .logo {
+        background-image: url("logo.png");
+        height: 150%;
+        width: 8%;
+        background-size: cover;
+        margin-left: 0%;
+      }
+
+      .input2 {
+        margin-left: 25%;
+        padding: 0%;
+        color: white;
+        display: flex;
+      }
+      .input2 input {
+        margin-top: 0%;
+      }
+      .input2 a {
+        margin-top: 19px;
+        margin-left: 70px;
+      }
+      button {
+        background-color: rgb(0, 107, 18);
+        color: white;
+        border: none;
+        height: 40px;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 20%;
+        font-size: 18px;
+      }
+      button:hover {
+        background-color: #26e600;
+        cursor: pointer;
+      }
+      h5 {
+        color: white;
+        margin-left: 35%;
+        font-size: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+
+    <div class="total">
+      <div class="glowing-circle">
+        <div class="logo"></div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-house fa-2x glowing-icon"></i>
+          <span class="icon-name">Home</span>
+        </div>
+        <div class="icon-container">
+          <i
+            class="fa-sharp fa-solid fa-magnifying-glass fa-2x glowing-icon"
+          ></i>
+          <span class="icon-name">Search</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-cart-shopping fa-2x glowing-icon"></i>
+          <span class="icon-name">Your Cart</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-location-dot fa-2x glowing-icon"></i>
+          <span class="icon-name">Location</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-truck-fast fa-2x glowing-icon"></i>
+          <span class="icon-name">Home Delivery</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-regular fa-credit-card fa-2x glowing-icon"></i>
+          <span class="icon-name">Payment Method</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-globe fa-2x glowing-icon"></i>
+          <span class="icon-name">Select Language</span>
+        </div>
+        <div class="icon-container">
+          <i class="fa-sharp fa-solid fa-user fa-2x glowing-icon"></i>
+          <span class="icon-name">Account</span>
+        </div>
+      </div>
+      <div class="box">
+        <h1><strong>Login</strong></h1>
+        <div class="input">
+          <h2>Email</h2>
+          <input type="email" />
+          <h2>Password</h2>
+          <input type="password" />
+        </div>
+        <div class="input2">
+          <input type="checkbox" />
+          <h4>Remeber me</h4>
+          <a href="#"><strong>Forgot Password?</strong></a>
+        </div>
+        <button>Submit</button>
+        <h5>Don't have an account? <a href="#">Register</a></h5>
+      </div>
+    </div>
+  </body>
+</html>
